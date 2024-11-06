@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.QuadCurve?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="MainStage" onDragDetected="#DisplayImage" prefHeight="400.0" prefWidth="604.0" style="-fx-background-color: #42dcfe;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moveme.LoginDashBoardController">
+    <children>
+        <ImageView fx:id="BusImage" fitHeight="299.0" fitWidth="355.0" layoutX="237.0" layoutY="121.0" onDragDetected="#DisplayImage" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../java/com/example/moveme/image/Daco_2337118.png" />
+            </image>
+        </ImageView>
+        <Button layoutX="572.0" layoutY="-1.0" mnemonicParsing="false" onAction="#ClickOnExit" style="-fx-background-color: trans; -fx-background-radius: 90; -fx-border-radius: 90;" text="X" textFill="RED">
+            <font>
+                <Font name="Microsoft JhengHei Bold" size="14.0" />
+            </font>
+        </Button>
+        <AnchorPane prefHeight="131.0" prefWidth="222.0" style="-fx-background-color: #002164;" />
+        <VBox layoutY="131.0" prefHeight="147.0" prefWidth="222.0" style="-fx-background-color: #002164;">
+            <children>
+                <Button mnemonicParsing="false" onAction="#ClickOnBalanceButton" prefHeight="46.0" prefWidth="219.0" style="-fx-background-color: trasfarent; -fx-text-fill: White;" text="Balance">
+                    <font>
+                        <Font name="Microsoft JhengHei Bold" size="15.0" />
+                    </font>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </Button>
+                <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#ClickOnTopUpButton" prefHeight="46.0" prefWidth="219.0" style="-fx-background-color: trasfarent; -fx-text-fill: White;" text="TopUp">
+                    <font>
+                        <Font name="Microsoft JhengHei Bold" size="15.0" />
+                    </font>
+                </Button>
+                <Button layoutX="10.0" layoutY="56.0" mnemonicParsing="false" onAction="#ClickOnDeleteButton" prefHeight="46.0" prefWidth="219.0" style="-fx-background-color: trasfarent; -fx-text-fill: White;" text="Delete Account">
+                    <font>
+                        <Font name="Microsoft JhengHei Bold" size="15.0" />
+                    </font>
+                </Button>
+            </children>
+        </VBox>
+        <Text fill="#002164" layoutX="39.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="M" textAlignment="CENTER" wrappingWidth="24.0">
+            <font>
+                <Font name="Microsoft Himalaya" size="96.0" />
+            </font>
+            <effect>
+                <Reflection fraction="0.0" topOpacity="0.0">
+                    <input>
+                        <DropShadow>
+                            <color>
+                                <Color green="0.13725490868091583" blue="0.3843137323856354" />
+                            </color>
+                            <input>
+                                <ColorAdjust brightness="0.07" contrast="0.83" hue="0.02" saturation="-0.37" />
+                            </input>
+                        </DropShadow>
+                    </input>
+                </Reflection>
+            </effect>
+        </Text>
+        <Text fill="#002164" layoutX="148.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E" textAlignment="CENTER" wrappingWidth="24.0">
+            <font>
+                <Font name="Microsoft Himalaya" size="96.0" />
+            </font>
+            <effect>
+                <Reflection fraction="0.0" topOpacity="0.0">
+                    <input>
+                        <DropShadow>
+                            <color>
+                                <Color green="0.13725490868091583" blue="0.3843137323856354" />
+                            </color>
+                            <input>
+                                <ColorAdjust brightness="0.07" contrast="0.83" hue="0.02" saturation="-0.37" />
+                            </input>
+                        </DropShadow>
+                    </input>
+                </Reflection>
+            </effect>
+        </Text>
+        <Text fill="#3a66fd" layoutX="92.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="o" textAlignment="CENTER" wrappingWidth="24.0">
+            <font>
+                <Font name="Microsoft Himalaya" size="96.0" />
+            </font>
+        </Text>
+        <Text fill="#3a66fd" layoutX="121.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="v" textAlignment="CENTER" wrappingWidth="24.0">
+            <font>
+                <Font name="Microsoft Himalaya" size="96.0" />
+            </font>
+            <effect>
+                <Reflection fraction="0.0" topOpacity="0.0">
+                    <input>
+                        <DropShadow>
+                            <color>
+                                <Color green="0.13725490868091583" blue="0.3843137323856354" />
+                            </color>
+                            <input>
+                                <ColorAdjust brightness="0.07" contrast="0.83" hue="0.02" saturation="-0.37" />
+                            </input>
+                        </DropShadow>
+                    </input>
+                </Reflection>
+            </effect>
+        </Text>
+        <QuadCurve controlX="-4.0" controlY="-26.0" endX="68.0" endY="-83.0" fill="#42dcfe" layoutX="115.0" layoutY="154.0" startX="-66.0" startY="-77.0" stroke="BLACK" strokeType="INSIDE">
+            <effect>
+                <Reflection />
+            </effect>
+        </QuadCurve>
+        <QuadCurve controlX="-3.0" controlY="24.1875" endX="55.0" endY="-12.0" fill="#002164" layoutX="106.0" layoutY="83.0" startX="-57.0" startY="-8.0" stroke="BLACK" strokeType="INSIDE">
+            <effect>
+                <Reflection />
+            </effect>
+        </QuadCurve>
+        <Text layoutX="291.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to MoveMe " wrappingWidth="151.13671875">
+            <font>
+                <Font name="Microsoft JhengHei Bold" size="14.0" />
+            </font>
+        </Text>
+        <Label fx:id="UserName" layoutX="441.0" layoutY="18.0" text="users name ">
+            <font>
+                <Font name="Microsoft JhengHei Bold" size="14.0" />
+            </font>
+        </Label>
+        <AnchorPane layoutY="278.0" prefHeight="122.0" prefWidth="222.0" style="-fx-background-color: #002164;">
+            <children>
+                <Text fill="WHITE" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact Us" textAlignment="CENTER" wrappingWidth="219.13671875">
+                    <font>
+                        <Font name="Microsoft JhengHei Bold" size="14.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="1.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="www.moveme.com" textAlignment="CENTER" wrappingWidth="219.13671875">
+                    <font>
+                        <Font name="Microsoft JhengHei Bold" size="14.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="1.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone : 0987654321" textAlignment="CENTER" wrappingWidth="219.13671875">
+                    <font>
+                        <Font name="Microsoft JhengHei Bold" size="14.0" />
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="TopUpStage" layoutX="222.0" layoutY="54.0" prefHeight="345.0" prefWidth="384.0" style="-fx-background-color: white;" visible="false">
+            <children>
+                <RadioButton fx:id="bkash" layoutX="48.0" layoutY="25.0" mnemonicParsing="false" onAction="#GetMethod" prefHeight="29.0" prefWidth="126.0" style="-fx-background-color: tras;" text="Bkash">
+                    <font>
+                        <Font name="Microsoft JhengHei Bold" size="14.0" />
+                    </font>
+                    <toggleGroup>
+                        <ToggleGroup fx:id="change" />
+                    </toggleGroup>
+                </RadioButton>
+                <ImageView fx:id="NagadImage" fitHeight="46.0" fitWidth="105.0" layoutX="152.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../../java/com/example/moveme/image/nagad.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="BkashImage" fitHeight="55.0" fitWidth="138.0" layoutX="141.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../../java/com/example/moveme/image/bkash.gif" />
+                    </image>
+                </ImageView>
+                <RadioButton fx:id="nagad" layoutX="222.0" layoutY="24.0" mnemonicParsing="false" onAction="#GetMethod" prefHeight="29.0" prefWidth="126.0" style="-fx-background-color: tras;" text="Nagad" toggleGroup="$change">
+                    <font>
+                        <Font name="Microsoft JhengHei Bold" size="14.0" />
+                    </font>
+                </RadioButton>
+                <AnchorPane fx:id="PaymentStage" layoutY="135.0" prefHeight="209.0" prefWidth="384.0" visible="false">
+                    <children>
+                        <TextField fx:id="Amount" layoutX="161.0" layoutY="25.0" />
+                        <Text layoutX="81.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount :">
+                            <font>
+                                <Font name="Microsoft JhengHei Bold" size="14.0" />
+                            </font>
+                        </Text>
+                        <Text layoutX="40.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account Number :">
+                            <font>
+                                <Font name="Microsoft JhengHei Bold" size="14.0" />
+                            </font>
+                        </Text>
+                        <TextField fx:id="Otp" layoutX="133.0" layoutY="109.0" />
+                        <Text layoutX="86.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OTP :">
+                            <font>
+                                <Font name="Microsoft JhengHei Bold" size="14.0" />
+                            </font>
+                        </Text>
+                        <Button layoutX="157.0" layoutY="161.0" mnemonicParsing="false" onAction="#ClickOnConfirmButton" style="-fx-background-color: #f3d4e0;" text="Confirm" textFill="#dd1f65">
+                            <font>
+                                <Font name="Microsoft JhengHei Bold" size="14.0" />
+                            </font>
+                        </Button>
+                        <TextField fx:id="AccountNumber" layoutX="173.0" layoutY="67.0" />
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="DeleteAccountStage" layoutX="255.0" layoutY="105.0" prefHeight="200.0" prefWidth="318.0" visible="false">
+            <children>
+                <Text layoutX="78.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter your CardNumber :">
+                    <font>
+                        <Font name="Microsoft JhengHei Bold" size="14.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="CardNumberToDelete" layoutX="57.0" layoutY="74.0" prefHeight="25.0" prefWidth="212.0">
+                    <cursor>
+                        <Cursor fx:constant="TEXT" />
+                    </cursor>
+                </TextField>
+                <Button layoutX="121.0" layoutY="121.0" mnemonicParsing="false" onAction="#ClickOnConfirmToDelete" style="-fx-background-color: #002164;" text="Confirm" textFill="WHITE">
+                    <font>
+                        <Font name="Microsoft JhengHei Bold" size="15.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
